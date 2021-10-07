@@ -34,7 +34,7 @@ func main() {
 		data := []byte(text + "\n")
 		_, err = conn.Write(data)
 		if strings.TrimSpace(string(data)) == "STOP" {
-			fmt.Println("Existing UDO client!:")
+			fmt.Println("Exiting UDP client")
 			return
 		}
 
